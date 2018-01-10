@@ -19,7 +19,7 @@ public class JavityCanvasComponent extends JComponent{
 	public void awake() {
 		long time = System.nanoTime();
 		
-		canvas = new MapDBCanvas((int) Math.pow(2, 11));
+		canvas = new MapDBCanvas((int) Math.pow(2, 8));
 		
 		time = System.nanoTime() - time;
 		time /= 100000;

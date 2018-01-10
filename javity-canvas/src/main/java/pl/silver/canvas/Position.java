@@ -11,6 +11,10 @@ public final class Position {
 		Y = y;
 	}
 
+	public Position(double x, double y) {
+		this((float)x, (float)y);
+	}
+
 	@Override
 	public String toString() {
 		return "Position [X=" + X + ", Y=" + Y + "]";

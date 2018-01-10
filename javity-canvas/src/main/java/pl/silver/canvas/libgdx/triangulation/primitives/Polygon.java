@@ -3,6 +3,9 @@ package pl.silver.canvas.libgdx.triangulation.primitives;
 import java.util.ArrayList;
 import java.util.Stack;
 
+import pl.silver.canvas.Position;
+import pl.silver.canvas.libgdx.triangulation.PolygonIntersect;
+
 /**
  * Represents a polygon.
  * 

@@ -382,7 +382,7 @@ public class MapDBCanvas implements SilverCanvas {
 	@Override
 	public Texture getTexture() {
 		Pixmap pixmap = new Pixmap(width, height, Pixmap.Format.RGBA8888);
-		pixmap.setColor(Color.BLACK.toIntValue());
+		pixmap.setColor(Color.CLEAR.toIntValue());
 		pixmap.fill();
 
 		for (int x = 0; x < width; x++) {

@@ -7,8 +7,8 @@ import org.javity.components.RectangleCollider;
 import org.javity.components.Rigidbody;
 import org.javity.components.SpriteRenderer;
 import org.javity.engine.JGameObject;
-import org.javity.engine.Scene;
-import org.javity.engine.SceneBulider;
+import org.javity.engine.JScene;
+import org.javity.engine.SceneBuilder;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.Vector2;
@@ -18,10 +18,10 @@ import pl.radomiej.map.MapCache;
 import pl.radomiej.map.MapComponent;
 import pl.radomiej.map.Marker;
 
-public class MapScene implements SceneBulider {
+public class MapScene implements SceneBuilder {
 
 	@Override
-	public void buildScene(Scene scene) {
+	public void buildScene(JScene scene) {
 		long size = (long) Math.pow(2, 28);
 		JGameObject map = scene.instantiateGameObject(new Vector2(100, 100));
 		map.addComponent(new SpriteRenderer("javity.png"));
